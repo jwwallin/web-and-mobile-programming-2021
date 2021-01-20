@@ -1,0 +1,94 @@
+
+
+* {
+  margin: 20px auto 20px auto;
+  --listBgColour: white;
+}
+
+.application-root {
+  color: black;
+}
+
+body {
+  text-align: center;
+  background-color: cadetblue;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  max-width: 500px;
+}
+
+a {
+  border: black;
+  border-radius: 20px;
+  color:black;
+  background-color: lightgreen;
+  text-decoration: none;
+  padding: 10px; 
+}
+
+a:hover {
+  background-color: limegreen;
+}
+
+table {
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: var(--listBgColour);
+  padding: 10px 10px 10px 25px
+}
+
+table caption {
+  margin: 0px;
+}
+
+tr {
+  padding: 3px;
+  margin: 3px 0 0 3px;
+  background-color: var(--listBgColour);
+}
+
+/* this is the header row */
+tr:first-child {
+  border-bottom: 4px solid black;
+}
+
+/* this is used for table header rows
+   technically tr:first-child targets 
+   the same row */
+.table-header {
+  background-color: darkkhaki;
+}
+
+/* this targets 3rd row and beyond */
+tr:nth-child(2n+3) {
+  filter: brightness(85%);
+}
+
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+ul, ol {
+  text-align: start;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: var(--listBgColour);
+  padding: 10px 10px 10px 25px
+}
+
+li {
+  margin: 3px 0 0 3px;
+  padding: 3px;
+  background-color: var(--listBgColour);
+}
+
+li:nth-child(2n+1) {
+  filter: brightness(85%);
+}
+
+textarea {
+  padding: 5px;
+  border-radius: 10px;
+}
